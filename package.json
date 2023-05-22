@@ -1,0 +1,19 @@
+{
+  "name": "agritectest",
+  "version": "1.0.0",
+  "description": "Atividade de WEB-2 do IFPE-JBG",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robcs9/AgritecTest.git"
+  },
+  "author": "Robson Cicero da Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robcs9/AgritecTest/issues"
+  },
+  "homepage": "https://github.com/robcs9/AgritecTest#readme"
+}
