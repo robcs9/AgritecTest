@@ -14,7 +14,7 @@ const req = https.get(options, (res) => {
         data += chunk;
     });
     res.on('end', (res) => {
-
+        console.log('Requisição à API concluída');
     });
 }).on('error', (err) => { console.log("Error: " + err.message) });
 req.end();
@@ -37,7 +37,7 @@ http.createServer((req, res) => {
             res.write(calagem);
             res.end();
             break;
-        case '/trigo':
+        /*case '/trigo':
             let calagem1 = JSON.parse(data).data.observacoesCalagem;
             let adubacao1 = JSON.parse(data).data.observacoesAdubacao;
             res.write('Observações de adubagem para Milho:\n');
@@ -54,9 +54,10 @@ http.createServer((req, res) => {
             break;
         case '/arroz':
             res.end();
-            break;
+            break;*/
         default:
             res.end('Insira na barra de endereço o parâmetro para exibir recomendações de calagem e adubação para a cultura agrícola desejada. Infelizmente, no momento, apenas /milho está funcionando devidamente.');
+            break;
     }
 }).listen(port, () => { console.log(`Server listening on port ${port}`); }).on('error', (err) => {
     console.log("Error: " + err.message)
